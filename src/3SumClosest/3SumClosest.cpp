@@ -27,7 +27,6 @@ using namespace std;
 //solution:  http://en.wikipedia.org/wiki/3SUM
 int threeSumClosest(vector<int> &num, int target) {
 
-
     sort(num.begin(), num.end());
 
     int n = num.size();

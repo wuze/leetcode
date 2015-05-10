@@ -38,6 +38,7 @@ vector<vector<int> > fourSum(vector<int> &num, int target) {
         //skip the duplication
         if (i>0 && num[i-1]==num[i]) continue;
         vector<int> n(num.begin()+i+1, num.end());
+		// 大问题化简为小问题， 
         vector<vector<int> > ret = threeSum(n, target-num[i]);
         for(int j=0; j<ret.size(); j++){
             ret[j].insert(ret[j].begin(), num[i]);
